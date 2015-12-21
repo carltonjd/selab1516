@@ -8,7 +8,7 @@ public class RecieptPrinter {
 	}
 	void printer (String accountNumber, double balance, Double withdraw_amt){
 		System.out.println("----------------------------------");
-		System.out.println("\t ATM Reciept");
+		System.out.println("\t ATM Reciept ");
 		System.out.println("----------------------------------");
 		System.out.println("Account Number : " + accountNumber);
 		System.out.println("Balance : " + balance);
