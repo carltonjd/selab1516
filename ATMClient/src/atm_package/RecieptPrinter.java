@@ -14,6 +14,7 @@ public class RecieptPrinter {
 		System.out.println("Balance : " + balance);
 		System.out.println("Withdrawn Amount : " + withdraw_amt);
 		System.out.println("----------------------------------");
+		System.out.println("----------------------------------");
 
 	}
 
