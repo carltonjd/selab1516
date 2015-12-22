@@ -33,6 +33,10 @@ public class QClient {
 		while (!stringQueue.isEmpty()) {
 			System.out.println("Dequeued : " + stringQueue.deQ());
 		}
+		
+		QueueArray QA = new QueueArray(5);
+		System.out.println("Queue empty : " + QA.isEmpty());
+		
 
 	}
 }
