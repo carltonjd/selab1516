@@ -13,4 +13,9 @@ public class Queue<Item> {
 		return list.poll();
 	}
 
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return list.isEmpty();
+	}
+
 }
