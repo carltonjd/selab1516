@@ -18,25 +18,20 @@ public class QClient {
 			System.out.println("Dequeued : " + integerQueue.deQ());
 		}
 
-		// Implement a Q of String Objects
+		// Implement a Q using Array as data structure
 
-		Queue<String> stringQueue = new Queue<String>();
-		System.out.println("\nString Queue ");
-		stringQueue.enQ("A");
-		System.out.println("Dequeued : " + stringQueue.deQ());
-		System.out.println("Queue empty : " + stringQueue.isEmpty());
-		stringQueue.enQ("A");
-		stringQueue.enQ("B");
-		stringQueue.enQ("C");
-		stringQueue.enQ("D");
-		System.out.println("Queue size is  : " + stringQueue.Qsize());
-		while (!stringQueue.isEmpty()) {
-			System.out.println("Dequeued : " + stringQueue.deQ());
-		}
+		System.out.println("\nArray Queue ");
+	
 		
 		QueueArray QA = new QueueArray(5);
 		System.out.println("Queue empty : " + QA.isEmpty());
-		
+		System.out.println("Queue empty : " + QA.isFull());
+		QA.enQ(5);
+		System.out.println("Dequeued : " + 		QA.deQ());
+
+		System.out.println("Queue size is  : " + 		QA.Qsize());
+
+
 
 	}
 }
