@@ -8,4 +8,9 @@ public class Queue<Item> {
 		list.addLast(i);
 	}
 
+	public Item deQ() {
+		// TODO Auto-generated method stub
+		return list.poll();
+	}
+
 }
