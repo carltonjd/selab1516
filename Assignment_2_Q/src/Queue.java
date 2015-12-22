@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 public class Queue<Item> {
-	   private LinkedList<Item> list = new LinkedList<Item>();
+	private LinkedList<Item> list = new LinkedList<Item>();
 
 	public void enQ(Item i) {
 		// TODO Auto-generated method stub
@@ -17,8 +17,9 @@ public class Queue<Item> {
 		// TODO Auto-generated method stub
 		return list.isEmpty();
 	}
+
 	public int Qsize() {
-	      return list.size();
-	   }
+		return list.size();
+	}
 
 }

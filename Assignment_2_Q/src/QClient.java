@@ -1,6 +1,9 @@
 
 public class QClient {
 	public static void main(String args[]) {
+
+		// Implement a Q of Integer Objects
+
 		Queue<Integer> integerQueue = new Queue<Integer>();
 		integerQueue.enQ(4);
 		System.out.println("Dequeued : " + integerQueue.deQ());
