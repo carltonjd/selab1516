@@ -17,5 +17,8 @@ public class Queue<Item> {
 		// TODO Auto-generated method stub
 		return list.isEmpty();
 	}
+	public int Qsize() {
+	      return list.size();
+	   }
 
 }
