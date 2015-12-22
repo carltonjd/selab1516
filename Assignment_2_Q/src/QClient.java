@@ -22,18 +22,18 @@ public class QClient {
 		// Implement a Q using Array as data structure
 
 		System.out.println("\nArray Queue\n");
-		QueueArray QA = new QueueArray(5);
-		System.out.println("Queue empty : " + QA.isEmpty());
-		QA.enQ(1);
-		QA.enQ(2);
-		QA.enQ(3);
-		QA.enQ(4);
-		QA.enQ(5);
-		System.out.println("Queue full : " + QA.isFull());
-		System.out.println("Dequeued : " + QA.deQ());
-		System.out.println("Queue size is  : " + QA.Qsize());
-		while (!QA.isEmpty()) {
-			System.out.println("Dequeued : " + QA.deQ());
+		QueueArray queueArray = new QueueArray(5);
+		System.out.println("Queue empty : " + queueArray.isEmpty());
+		queueArray.enQ(1);
+		queueArray.enQ(2);
+		queueArray.enQ(3);
+		queueArray.enQ(4);
+		queueArray.enQ(5);
+		System.out.println("Queue full : " + queueArray.isFull());
+		System.out.println("Dequeued : " + queueArray.deQ());
+		System.out.println("Queue size is  : " + queueArray.Qsize());
+		while (!queueArray.isEmpty()) {
+			System.out.println("Dequeued : " + queueArray.deQ());
 		}
 	}
 }
