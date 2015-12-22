@@ -1,16 +1,16 @@
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Queue<Item> {
-	private LinkedList<Item> list = new LinkedList<Item>();
+	private ArrayList<Item> list = new ArrayList<Item>();
 
 	public void enQ(Item i) {
 		// TODO Auto-generated method stub
-		list.addLast(i);
+		list.add(i);
 	}
 
 	public Item deQ() {
 		// TODO Auto-generated method stub
-		return list.poll();
+		return list.remove(0);
 	}
 
 	public boolean isEmpty() {
