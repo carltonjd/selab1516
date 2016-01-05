@@ -1,5 +1,5 @@
 public abstract class Queue {
-	
+
 	public abstract void enQ(int i);
 
 	public abstract int deQ();

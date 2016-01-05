@@ -1,6 +1,6 @@
 import java.util.NoSuchElementException;
 
-public class QueueArray extends Queue{
+public class QueueArray extends Queue {
 	protected int List[], front, rear, max_size, length;
 
 	public QueueArray(int i) {
