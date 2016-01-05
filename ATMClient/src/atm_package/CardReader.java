@@ -7,12 +7,13 @@ public class CardReader {
 
 	private BankAccount acc;
 
-	CardReader(ATMCard card2, BankAccount a) {
-		card = card2;
+	CardReader(BankAccount a) {
+		
 		acc = a;
 	}
 
-	public boolean insertCard() {
+	public boolean insertCard(ATMCard myCard) {
+		card=myCard;
 		// TODO Auto-generated method stub
 		if (acc.getCardNumber() == card.getCardNumber())
 			return true;

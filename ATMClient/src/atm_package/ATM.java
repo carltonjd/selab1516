@@ -10,11 +10,10 @@ public class ATM {
 	RecieptPrinter reciept = new RecieptPrinter();
 	Keyboard keyboard = new Keyboard();
 
-	ATM(double b, ATMCard myCard, BankAccount myAccount) {
-		casher = new CashDispenser(b);
-		card = myCard;
+	ATM(double b, BankAccount myAccount) {
+		casher = new CashDispenser(b);		
 		acc=myAccount;
-		reader = new CardReader(card,acc);
+		reader = new CardReader(acc);
 	}
 
 	void connectDB(BankAccount a) {

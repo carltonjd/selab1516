@@ -4,12 +4,12 @@ public class ATMClient {
 	public static void main(String args[]) {
 		BankAccount myAccount = new BankAccount("A1B2C3", 12345, 15000);
 		ATMCard myCard = new ATMCard(12345, 4321);
-		ATM atm = new ATM(50000, myCard, myAccount);
+		ATM atm = new ATM(50000, myAccount);
 		atm.connectDB(myAccount);
 
 		CardReader cardReader = atm.getCardReader();
 		// Simulate interaction with user, User first inserts card, check if it belongs to valid account
-		if (cardReader.insertCard()) {
+		if (cardReader.insertCard(myCard)) {
 			// User inputs pin, verify pin
 			cardReader.inputPin(4321);
 			if (cardReader.verifyPin()) {
