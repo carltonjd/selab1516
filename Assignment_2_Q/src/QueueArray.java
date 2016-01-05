@@ -1,6 +1,6 @@
 import java.util.NoSuchElementException;
 
-public class QueueArray {
+public class QueueArray extends Queue{
 	protected int List[], front, rear, max_size, length;
 
 	public QueueArray(int i) {
@@ -46,11 +46,6 @@ public class QueueArray {
 		// TODO Auto-generated method stub
 		return front == -1;
 
-	}
-
-	public boolean isFull() {
-		// TODO Auto-generated method stub
-		return front == 0 && rear == max_size - 1;
 	}
 
 	public int Qsize() {
